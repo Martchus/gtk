@@ -1411,7 +1411,7 @@ libgtk_3_la_LIBADD = $(libadd)
 libgtk_3_la_DEPENDENCIES = $(deps)
 
 if USE_WIN32
-libgtk_3_la_LIBADD += -lole32 -lgdi32 -lcomdlg32 -lwinspool -lcomctl32
+libgtk_3_la_LIBADD += -lole32 -lgdi32 -lcomdlg32 -lwinspool -lcomctl32 -lmsvcr90
 libgtk_3_la_LDFLAGS += -Wl,-luuid $(gtk_win32_res_ldflag)
 libgtk_3_la_DEPENDENCIES += $(gtk_win32_res)
 endif
